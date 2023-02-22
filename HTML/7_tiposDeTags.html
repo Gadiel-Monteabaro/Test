@@ -1,0 +1,46 @@
+<!--
+    Elemento Block y Elemento Inline
+    
+    En HTML existen elementos de tipo block y de tipo inline.
+
+    Los elementos block generan una línea que ocupan todo el ancho de la pantalla y empuja el resto de los elementos
+    hacia arriba y hacia abajo. Por ejemplo, los encabezados (desde h1 hasta h6), los párrafos (p) y las listas (ul,
+    ol y li).
+
+    Los elementos inline, en cambio, ocupan solo el espacio delimitado entre su opening tag y closing tag. Estos
+    elementos pueden insertarse sin problemas dentro de los elementos de tipo block. Por ejemplo, las imágenes (img)
+    y los links (a).
+-->
+
+<!--
+    Tags Anidados
+
+    Los tags se anidan constantemente unos dentro de otros. Esto quiere decir que un tag contiene a otros.
+
+    Por Ejemplo:
+    <ol>
+        quiere decir ordered list y sirve para crear una lista donde cada ítem está precedido por un
+        número. Es decir, tiene un orden. Por lo tanto, se representa con números o letras.
+
+    <ul>
+        quiere decir unordered list y se usa para crear una lista donde cada ítem está precedido
+        por otro pero sin un orden lógico. Por lo tanto, se representa con símbolos gráficos como puntos o
+        rayas, etc.
+
+        Tanto dentro de ol como de ul se debe anidar un tag li, que quiere decir list item. Es decir,
+        representa a cada ítem de la lista. Entre el opening tag (li) y closing tag (/li) se escribe el nombre
+        del elemento.
+-->
+
+<!--
+    Barra de navegación
+    un bloque <nav> es usado para contener una lista no ordenada (<ul>) de enlaces. Con el CSS apropiado, esto puede
+    ser presentado como una barra lateral, una barra de navegación o un menú desplegable.
+-->
+<nav class="menu">
+    <ul>
+        <li><a href="#">Inicio</a></li> ->
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>

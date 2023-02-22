@@ -1,0 +1,31 @@
+/*
+    Hay maneras más (o menos) eficientes de aplicar CSS a un documento HTML.
+
+    -> Mediante el atributo <style>.
+    Para incluir CSS de esta forma, directamente le agregamos el atributo <style> al elemento HTML que queremos modificar. Luego, le asignamos como valor un par propiedad-valor (del inglés key-value pair), que indique la propiedad CSS que queremos cambiar y cuál será su valor.
+
+    <body style="background-color:lightgrey">
+
+    -> Mediante el tag <style>.
+    El tag <style> se aplica dentro del <head> al principio del documento HTML y va a contener las reglas CSS entre su opening y closing tag (<style>...</style>). ->ver imagen 2_aplicacion.png
+
+    -> Vincular el código de un archivo .css externo.
+    Para solucionar los problemas que vimos antes, la forma correcta de incorporar CSS en un HTML es hacer un documento .css y vincularlo en el HTML usando el tag <link> dentro del <head>. De esta manera, se aplican las reglas CSS contenidas en un documento externo a una, o más, páginas HTML.
+
+    Claramente, esta práctica es mucho más escalable porque con un solo documento CSS, podés darle estilo a muchos archivos HTML.
+    ->ver imagen 2_aplicacion2.png
+
+    El atributo href: Indica la dirección dónde se aloja el archivo con las reglas CSS. Va siempre entre comillas.
+    El atributo rel: Indica que el archivo que estamos trayendo es una hoja de estilos CSS. Siempre lleva el valor stylesheet.
+    El atributo type: Indica que el contenido que traemos será texto y reglas CSS. Siempre lleva el valor text/css.
+*/
+
+/*
+    Glosario
+    Escabilidad: 
+    es la propiedad deseable de un sistema, red o proceso, que indica su habilidad para reaccionar o adaptarse sin perder calidad.
+
+    También, para manejar el crecimiento continuo de trabajo de manera fluida. Es decir, estar preparado para hacerse más grande sin perder calidad en los servicios ofrecidos.
+
+    Por ejemplo, si tengo una página con 100 párrafos y quisiera cambiarle el tamaño de la tipografía usando el atributo style, tendría que escribir un código por párrafo, repitiendo lo mismo 100 veces.
+*/

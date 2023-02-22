@@ -1,0 +1,28 @@
+<div>
+    <!--
+        Un dropdown es una lista desplegable. Es decir, es un tipo de input que te muestra las opciones disponibles
+        dentro de un menú.
+
+        Para agregar un dropdown en tu formulario, seguí estos pasos:
+
+        Escribí un tag <select> </select>con su opening y closing tag. Ellos contendrán las opciones disponibles.
+
+        Escribí un atributo name que indique en tu Query String a qué campo corresponde la opción elegida.
+
+        Ingresá los valores disponibles usando un tag <option></option> para cada una de ellos.
+
+        Agregale un atributo value que indique cómo querés que aparezca en la Query String la opción elegida por
+        el usuario.
+
+        Puede tener el mismo valor que la option, una abreviación o cualquier otra nomenclatura. En caso de que no
+        agregues este atributo, aparecerá en la Query String el valor dado en la option.
+    -->
+
+    <label for="sede">Elegí La Sede Donde Querés Estudiar:</label>
+    <select name="sede" id="sede">
+        <option value="atr">Online A Tu Ritmo</option>
+        <option value="pal">Palermo</option>
+        <option value="itu">Ituzaingó</option>
+        <option value="chi">Santiago De Chile</option>
+    </select>
+</div>

@@ -1,0 +1,9 @@
+/*
+La Propiedad Float: Otra Forma De Posicionar Elementos.
+
+La propiedad Float indica si un elemento sale, o no, del flujo del contenido y si se posiciona a la izquierda o a la derecha de su contenedor. Al aplicarla, el resto de los elementos lo envolverán automáticamente.
+
+Recapitulando, la propiedad Float puede tomar los valores right o left y hace que un elemento flote, moviéndose todo lo que pueda en esa dirección. Es decir, apila los elementos hacia un lado y, si ya no entraran en el ancho de la pantalla, los ubicará en la fila de abajo.
+*/
+
+

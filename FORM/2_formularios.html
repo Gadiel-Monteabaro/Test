@@ -1,0 +1,88 @@
+<!--
+    ¿Qué Es Un Formulario?
+    Los formularios HTML se usan para recoger información que nos da el usuario.
+    
+    Caracteristicas de los formularios.
+    Los formularios que existen en la web son modulares, es decir, se construyen a partir de distintos tipos de
+    módulos o inputs.
+
+    Un input es un campo de datos que permite que el usuario ingrese o elija un valor. Es decir, es una de las
+    maneras que tenemos de recolectar su información.
+
+    Hay muchos tipos de input, desde espacios vacíos para que el usuario complete con letras o números, listas
+    desplegables, campos para escribir una contraseña, etc.
+-->
+<!--https://www.w3schools.com/tags/att_input_type.asp--> aqui podemos ver distintos tipos de imputs.
+<div>
+    <!--
+        Estructura De Los Formularios
+        Etiqueta <form></form>, define el comienzo y el fin de un formulario HTML. Este tag se abre y se cierra
+        normalmente.
+
+        Tiene dos atributos principales: action y method:
+        action: Define a dónde debe mandar la información del formulario. Puede ser una URL o carpeta dentro de un
+        servidor.
+
+        method: Define qué método HTTP usará. Puede ser get si pide información o post si la envía.
+
+        Etiqueta <input>, crean los campos donde el usuario ingresa la información. Tienen el atributo type que define
+        el tipo de información que recibe. Los tags <input> son autocontenidos, es decir, no se cierran.
+    -->
+
+    <form action="" method="">
+        <!--Define un campo donde el usuario puede escribir cualquier texto.-->
+        <input name="text" type="text">
+        <!--Oculta la información al momento de escribirla. Generalmente, reemplaza los caracteres ingresados por
+            asteriscos o puntos.-->
+        <input name="password" type="password">
+        <!--Define un campo donde el usuario debe escribir una dirección de correo electrónico.-->
+        <input name="email" type="email">
+        <!--Genera un botón que envía la información del formulario.-->
+        <input name="submit" type="submit">
+    </form>
+    <!--
+        para ver mas types visitar -> https://www.w3schools.com/tags/att_input_type.asp
+    -->
+</div>
+<div>
+    <!--
+        Cuando apretamos submit, el formulario envía la información ingresada en forma de key-value pairs.
+        Es decir, genera una variable para guardar el contenido de cada <input>. Por lo tanto, cada <input> deberá tener
+        un atributo name que indique a qué campo corresponde la información ingresada.
+
+        si queremos enviar la edad de una persona, el servidor recibirá un campo edad y el valor numérico que ingresó el
+        usuario.
+    -->
+    <!--
+        El siguiente código enviará un campo con el nombre del usuario, otro con su edad y otro con su contraseña
+    -->
+    <form action="url de destino donde se enviara la informacion del formulario.">
+        <input type="text" name="nombre">
+        <input type="number" name="edad">
+        <input type="password" name="contraseña">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--
+        Ver iamgen 2_formularios.png
+    -->
+
+    <!--
+        Si te fijás en la URL verás que ahora contiene un signo de pregunta (?) seguido por la información de cada
+        campo, separado por un signo et (&). A esta parte de la URL se la llama Query String.
+
+        Los tags <input> pueden ponerse por separado en el HTML, fuera del tag <form>. Pero, si queremos que la
+        información que ingresa el usuario esté relacionada y se envíe toda junta, tiene que estar contenida dentro
+        de un tag <form>.
+    -->
+</div>
+<div>
+    <!--
+        ¿Qué Es Un Query String?
+        Los Query String son bloques de texto sin espacios que se usan para enviar información. El espacio se reemplaza
+        por %20 y otros símbolos (como las tildes) que tienen sus propias formas de escribirse en este formato.
+
+        En el inpeccionador, apretamos newtwork, y le damos tilde a la opción "preserve log", nos permitira ver los
+        datos al momento de generar un submit.
+    -->
+</div>

@@ -1,0 +1,24 @@
+/*
+Propiedad Width
+Para cambiar el ancho de un elemento, como de un div, deberás usar la propiedad width.
+
+En esta propiedad, podrás darle a ese elemento un valor absoluto (una cantidad de píxeles) o relativos a la vista del dispositivo (un porcentaje de la pantalla).
+
+La diferencia entre uno y el otro es que, usando el relativo te asegurás que el diseño sea responsive y se adecue a todos los dispositivos.
+*/
+div {
+  width: 20px;
+}
+
+div {
+  width: 50%;
+}
+/*
+usando este criterio podrás notar que miden solo 50% del elemento que los contiene. En este caso, los div están contenidos dentro del <body> que ocupa toda la pantalla. Sin embargo, si estuvieran dentro de otro elemento, el ancho sería un 50% de ese elemento en particular.
+*/
+
+/*
+Cómo centrar un elemento usando el valor auto
+
+El valor auto hace que la caja deje el mismo espacio de margen de cada lado. Es decir que, eligiendo este valor, la caja quedará centrada.
+*/

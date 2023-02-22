@@ -1,0 +1,22 @@
+/*
+    :root -> es un "pseudo-class selector" (selector de pseudo-clase) que corresponde al elemento raíz o "root" del documento, que generalmente es el elemento html. Al crear tus variables en :root, estarán disponibles globalmente y se podrán acceder desde cualquier otro selector en la hoja de estilo.
+*/
+:root {
+  --color-global: #48cae4;
+  --color-footer: #0077b6;
+  --color-footer-text: #ade8f4;
+  --size-image: 300px;
+}
+
+.global {
+  background-color: var(--color-global);
+}
+
+.footer {
+  background-color: var(--color-footer);
+  color: var(--color-footer-text);
+}
+
+.img {
+  width: var(--size-image);
+}

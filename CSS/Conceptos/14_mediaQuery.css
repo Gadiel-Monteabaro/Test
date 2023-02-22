@@ -1,0 +1,18 @@
+/*
+    La regla-at (declaración CSS que comienza con el símbolo arroba) @media, también conocida como media query, se utiliza para aplicar CSS de forma condicional. Las media queries se utilizan comúnmente para aplicar CSS basado en el ancho del viewport utilizando las propiedades max-width y min-width.
+
+    En el siguiente ejemplo, el relleno se aplica a la clase .card cuando el viewport tiene un ancho de 960px o inferior.
+*/
+@media (max-width: 960px) {
+  .card {
+    padding: 2rem;
+  }
+}
+
+/*
+    Es posible aumentar la complejidad de las media queries usando operadores lógicos. El operador lógico and es utilizado para combinar en una sola consulta dos características de medios.
+
+    Por ejemplo, una media query cuyo objetivo es una anchura de pantalla entre 500px y 1000px podría ser:
+*/
+@media (min-width: 500px) and (max-width: 1000px) {
+}

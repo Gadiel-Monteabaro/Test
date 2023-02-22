@@ -1,0 +1,12 @@
+/*
+    La Especificidad En CSS.
+
+    La especificidad se refiere al criterio que aplican los navegadores para decidir qué regla CSS aplicar cuando estas son contradictorias entre sí. Es decir, el browser determinará cuál es la más relevante para ese elemento.
+
+    ¿Cómo Se Determina La Especificidad?
+    Cuando creamos un selector, CSS le asigna un valor a su especificidad que varía según el tipo:
+
+    El selector de elemento (p {...}): Cuando seleccionamos elementos HTML genéricos tiene una especificidad de 1 y es el menos específico.
+    El selector de class (.ejemplo {...}): Es menos genérico que el selector de elemento y, por lo tanto, tiene una especificidad de 10.
+    El selector de id ( #ejemplo {...}): Al ser el menos genérico (o el más específico) tiene una especificidad de 100.
+*/

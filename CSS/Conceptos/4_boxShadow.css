@@ -1,0 +1,16 @@
+/*
+    La propiedad box-shadow aplica una o más sombras a un elemento.
+
+    La propiedad box-shadow toma los siguientes valores, en orden:
+
+    offset-x (qué tan lejos extender la sombra horizontalmente desde el elemento)
+    offset-y (qué tan lejos extender la sombra verticalmente desde el elemento)
+    blur-radius
+    spread-radius
+    color   
+*/
+.box {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+

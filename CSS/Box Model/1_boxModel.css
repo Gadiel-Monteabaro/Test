@@ -1,0 +1,29 @@
+/*
+En un documento HTML, cada elemento es representado como una caja rectangular con 4 capas de profundidad: contenido, padding, borde y margen. Gracias a CSS, podrás manipularlas para tener un diseño más atractivo.
+
+Yendo desde afuera hacia adentro, las capas son: ss
+
+Margen (margin): es el espacio que separa un elemento de los otros. En este caso, es el espacio entre las cajas.
+
+Borde (border): es la línea de la caja que marca su límite. Podemos hacerlo visible con diferentes grosores, estilos y colores.
+
+Padding: es el espacio que separa el borde de la caja de su contenido.
+
+Contenido (content): es todo lo que está contenido en el elemento. Puede ser, por ejemplo, un texto en un <h1>, una imagen o cualquier tag anidado.
+
+ver imagen -> 1_boxModel.png
+
+Las propiedades margin, border y padding, tienen 4 lados que se pueden modificar individualmente:
+*/
+div {
+  margin-top: 5px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+/*
+Podemos ser mas eficientes de la siguiente manera:
+*/
+div {
+  margin: 5px 2px 10px 15px;
+}

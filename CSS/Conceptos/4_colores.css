@@ -1,0 +1,43 @@
+/*
+  En CSS podemos escribir los colores de 3 maneras diferentes.
+
+  ->Con su nombre en inglés: Por ejemplo, red, green, blue, purple.
+
+  ->Con su código hexadecimal: Es una secuencia de 16 dígitos entre 0 y F precedidos por un signo '#'. Por ejemplo, #CD00CD (que es el código del color magenta).
+
+  ->Con el sistema RGB (red, green, blue): Se le da un valor entre 0 y 255 a cada uno de los tres colores. Por ejemplo, rgb(210, 140, 176).
+  RGBA es un formato similar a RGB pero que incorpora un cuarto valor entre 0 y 1 para indicar la transparencia del color.
+
+  ¿Dónde Encontrar Los Códigos De Cada Color?
+  Aquí podrás armar la paleta de colores que usarás en cada proyecto. -> https://coolors.co/
+*/
+* {
+  border-color: magenta;
+  color: #cd00cd;
+  background-color: rgba(205, 0, 205, 0.5);
+  background-color: hsl(180, 80%, 25%);
+}
+
+/*
+  Gradiente Lineal
+  CSS proporciona la capacidad de usar transiciones de color, también conocidas como degradados, en los elementos.
+  background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+*/
+* {
+  background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+}
+
+/*
+  La función repeating-linear-gradient() es muy similar a linear-gradient() con la principal diferencia de que repite el patrón de degradado especificado. repeating-linear-gradient() acepta una variedad de valores, pero para simplificar, trabajarás con un valor de ángulo y valores de parada de color en este desafío.
+*/
+* {
+  background: repeating-linear-gradient(
+    45deg,
+    yellow 0px,
+    yellow 40px,
+    black 40px,
+    black 80px
+  );
+}
+
+

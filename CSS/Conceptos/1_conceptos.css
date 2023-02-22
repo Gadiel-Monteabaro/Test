@@ -1,0 +1,45 @@
+/*
+  ¿Qué Es CSS?
+  CSS significa Cascading Style Sheets y es el lenguaje que se usa para aplicar cambios estéticos a los documentos HTML.
+
+  CSS son las hojas de estilo que le indican al navegador cómo deben verse los distintos elementos HTML (<p>, <h1>, <ul>, etc.).
+
+  Estas, también llamadas stylesheets, son archivos con extensión .css que se vinculan y modifican uno, o más, documentos HTML.
+
+*/
+
+/*
+  Sintaxis -> ver imagen 1_sintaxis.png
+*/
+p {
+  color: red;
+}
+
+/*
+  Glosario
+  Selector: Es un comando que selecciona uno o más elementos del documento HTML. Por ejemplo, podemos darle un estilo particular a todo un párrafo dentro de nuestro documento HTML, o solo una palabra dentro de ese mismo párrafo.
+
+  Declaración: Es lo que indica qué cambiaremos y se escribe dentro de llaves ({}). A su vez, se compone de:
+  La propiedad: Es el aspecto del elemento que queremos modificar (por ejemplo, el color, el tamaño de la letra, etc.).
+
+  Un valor para esa propiedad: Es lo que define de qué manera modificaremos la propiedad y se separa por dos puntos (:). 
+
+  selector {
+    propiedad: valor;
+    otrapropiedad: valor;
+  }
+
+*/
+h1 {
+  font-family: verdana;
+  color: blue;
+}
+
+p {
+  color: green;
+  background-color: yellow;
+}
+
+em {
+  font-size: 300%;
+}

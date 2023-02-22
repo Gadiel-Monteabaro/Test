@@ -1,0 +1,15 @@
+/*
+  El Atributo Id;
+
+  El atributo id permite seleccionar de manera específica un elemento HTML y darle un estilo único.
+
+  En el CSS, seleccionar ese id usando un numeral # seguido por el nombre.
+
+  La diferencia principal entre un id y una class es que un mismo ID no se le puede asignar a varios elementos y la clase sí.
+
+  <p id="ron"> Mi perro Ron </p>
+*/
+#ron {
+  font-style: italic;
+  font-family: impact;
+}

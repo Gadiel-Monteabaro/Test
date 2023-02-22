@@ -1,0 +1,50 @@
+<div>
+    <!--
+        Radio Buttons.
+        Hay otras formas de input que podemos agregar en los formularios.
+        Los radio buttons son botones que nos permiten seleccionar una opción entre dos o más dadas.
+        La idea de este tipo de input es que no se puedan seleccionar ambos en simultáneo.
+
+        Para crearlos deberás escribir:
+
+        Un tag <label></label> que indique el nombre que aparecerá antes del radio button.
+
+        Un tag <input> que tenga estos 3 atributos:
+        name: Indicará a qué variable refiere el valor del input al momento de enviar la información. Es decir, en
+        la Query String, el campo "name" tendrá el valor de la opción que haya elegido el usuario.
+
+        type: Indicará qué tipo de botón es, en este caso, radio.
+
+        value: Indicará cómo querés que aparezca en la Query String la opción elegida por el usuario (puede tener el
+        mismo valor que la label, una abreviación o cualquier otra nomenclatura).
+    -->
+</div>
+<div>
+    <label> Mañana:
+        <input name="Turno" type="radio" value="tm">
+    </label>
+
+    <label> Tarde:
+        <input name="Turno" type="radio" value="tt">
+    </label>
+
+    <label> Sábado:
+        <input name="Turno" type="radio" value="ts">
+    </label>
+
+    <label> A Tu Ritmo:
+        <input name="Turno" type="radio" value="atr">
+    </label>
+</div>
+
+<!--
+    El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.
+
+    El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario.
+-->
+
+<fieldset>
+    <legend>Is yout cat an indoor or outdoor car?</legend>
+    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+</fieldset>

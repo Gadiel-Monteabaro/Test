@@ -1,0 +1,26 @@
+<!--
+    En HTML5, la API de GeoLocalizacion e s usada para obtener la localizacion geografica del usuario.
+    Ya que esto puede comprometer la privacidad del usuario, la opcion no esta disponible a menos que el usuario la apruebe.
+-->
+
+<script>
+    navigator.geolocation.getCurrentPosition();
+    /*
+    Parametros:
+    showLocation: define el metodo callback que obtiene la informacion de localizacion.
+
+    ErrorHandler: Define el metodo callback que es invocado cuando un error ocurre procesando la llamada asincronica.
+
+    Options: Define un conjunto de opciones para obtener la informacion de localizacion.333
+    */
+</script>
+
+<!--
+    Presentando los datos. 
+    La localizacion del usuario puede ser presentada de dos formas
+
+    1-> La forma "geodetic" para describir posicion se refiere directamente a la latitud y longitud.
+    2-> La representacion "civic" de los datos, es presentada en un formato que es leido mas facilmente y entendido por la persona promedio:
+
+    Cada parametro tiene una representacion geodetic como civi.
+-->

@@ -1,0 +1,30 @@
+/*
+Box sizing es una propiedad que determina qué elemento de la caja se considerará para determinar el ancho final del elemento. Los valores pueden ser content-box o border-box.
+*/
+/*
+Content-Box.
+
+Para poder definir el ancho de un elemento, podríamos usar la propiedad width, que especifica el ancho del content. Sin embargo, por default, CSS sumará el border y el padding para determinar el ancho final del elemento. A este valor se lo llama Content-Box.
+
+En este modelo, al definir el width del elemento, se le sumará el border y el padding automáticamente. Por lo tanto, si definiéramos...:
+
+Un width de 33% para que un elemento ocupe un tercio de su contenedor.
+Un border de 2px.
+Un padding de 30px.
+
+... El elemento final medirá más de un tercio de su contenedor. Esto, seguramente, arruine la distribución planeada ya que las cajas que no entren en ese ancho, se irán a la fila de abajo.
+*/
+/*
+Border-Box.
+
+Para ser más precisos y tener más control, conviene usar la propiedad box-sizing: border-box;. De esta manera, el browser entiende que el ancho indicado es el final, incluyendo los bordes y el padding.
+*/
+/*
+Resets
+Un reset es una regla CSS que se declara para asegurar que las páginas respondan al criterio estético de cada proyecto.
+
+Debido a que los browsers tienen estilos que aplican por default, que pueden derivar en ciertas inconsistencias visuales, es una práctica recomendable crear un reset al principio del CSS.
+*/
+* {
+  box-sizing: border-box;
+}

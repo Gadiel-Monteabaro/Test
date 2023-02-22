@@ -1,0 +1,46 @@
+<!--
+    El Tag <a> (Anchor Tag) 
+
+    Anatomia:
+    Tiene un tag de apertura <a> y uno de cierre </a>.
+
+    El opening y closing tag contienen al texto (en este caso "Texto que contiene el hipervínculo"), transformándolo en
+    un link visible para el usuario. Este contenido puede ser tanto un texto como otros elementos de HTML: por ejemplo,
+    una imagen.
+
+    El atributo href indica dónde llevará el link cuando el usuario haga click. En este caso, el valor es "URL", una
+    página externa.
+
+    Estructura del tag <a></a>
+-->
+
+<!--
+    Ver imagen 10_anchorTag.html
+-->
+<a href="https://www.google.com/?hl=es">Google</a>
+
+<!--
+    El atributo "href" puede vincular tanto a páginas locales dentro de nuestra computadora como a otras externas en
+    internet.
+-->
+
+<!--
+    Hipervínculos A Archivos Locales
+
+    En el caso de que el archivo esté alojado en la computadora, deberás escribir su nombre y extensión.
+
+    Si el archivo está en la misma carpeta que la página que tiene el link, solo deberás escribir su nombre. Por
+    ejemplo: "1_conceptos.html".
+
+    Si está en otro directorio, deberás indicar la ruta completa, desde la página en la que estás hasta la página de
+    destino. Por ejemplo: "1_internet/1_conceptos.html".
+-->
+<a href="../BBDD/bbdd-1.php">Texto que dirige el usuario a un archivo local</a>
+
+<!--
+    Hipervínculos A Páginas Externas
+
+    En caso de vincular a una página externa, el valor del atributo tiene que incluir "http://". Por ejemplo, para
+    dirigir el enlace a Google, el valor de href será:
+-->
+<a href="http://www.google.com"> Texto que dirige el usuario a Google </a>

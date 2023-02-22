@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body style="text-align: center;">
+    <video src="" controls></video>
+    <!--
+        Otra forma de generar videos o audios.
+        Otro aspecto que los elementos de audio y video tienen en comun es que los exploradores mas importantes no soportan los mismo tipos de archivo. Si el explorador no soprta el primer tipo de video, intentara con el siguiente.
+    -->
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Elemento video no es soportado en su explorador.
+    </video>
+
+    <!--------------------------------------------------------------------------------------->
+
+    <!--
+        Audio
+    -->
+    <audio src="audio.mp3" controls></audio>
+    <!--
+        Atributos para el elemento audio
+
+        controls -> especifica que controles de audio deberian ser desplegados (como el boton de play/pause etc.)
+        autoplay -> El audio comienza a reproducirse una vez cargada la pagina web, sin preguntar por el permiso del participante.
+        loop -> Este atributo es usado para que el audio se vuelva a reproducir cada vez que finaliza.
+    
+        Actualmente hay 3 formatos de archivo soportados para el elemento <audio>: MP3, WAV, OGG.
+    -->
+
+</body>
+
+</html>

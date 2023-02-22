@@ -1,0 +1,9 @@
+/*
+    ¿Cómo Modificar Elementos HTML Puntuales?
+    Para modificar elementos HTML puntuales podemos usar los atributos id y class.
+
+    Diferencia Entre ID Y Class
+    El atributo id permite seleccionar de manera específica un elemento HTML y darle un estilo único. En cambio, el atributo class sirve para dar estilo a varios elementos HTML al mismo tiempo.
+
+    Un elemento HTML puede tener solo un ID que será aplicado únicamente a ese elemento pero se le puede aplicar muchas clases al mismo tiempo. Incluso, puede compartir una class con otros elementos.
+*/

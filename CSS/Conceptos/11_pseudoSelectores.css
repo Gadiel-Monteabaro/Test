@@ -1,0 +1,49 @@
+/*
+  PseudoSelectores
+  Los pseudo-selectores son palabras clave que se añaden a los selectores para especificar diferentes estados.
+  Es decir, se activan dependiendo de lo que haga el usuario. Por lo tanto, si los elementos a los que se aplican estos pseudo-selectores cumplen con estas condiciones o estados, se aplicarán los estilos dados.
+*/
+
+/*
+  Hover (elemento:hover): La regla CSS se aplicará únicamente cuando el usuario pase el mouse por encima del elemento indicado
+*/
+h1:hover {
+  /*cada vez que se pase el mouse por encima de un <h1> se activará regla CSS expresada entre las llaves, haciendo que el color de la letra cambie a rojo.*/
+  color: red;
+}
+
+/*
+  Active (elemento:active): La regla CSS se aplicará cuando el elemento esté siendo activado.
+*/
+#ejemplo:active {
+  /*cuando se haga click en el elemento con id="ejemplo" se activará la regla CSS expresada entre las llaves, haciendo que el color de fondo se ponga verde.*/
+  background-color: green;
+}
+
+/*
+  Tip: Para darle un estilo apropiado a los enlaces, seguí el orden LVHA: :link, :visited, :hover y :active. Es decir, :active será la última regla que debas definirle a un link.
+*/
+
+/*
+  Focus (elemento:focus): La regla CSS se aplicará cuando el elemento esté en foco (como el input de un formulario que está seleccionado para completar). 
+*/
+.formulario:focus {
+  /*cuando se seleccione un elemento con class="formulario" se activará la regla CSS expresada entre las llaves, haciendo que el borde se ponga color dorado.*/
+  border: 2px solid gold;
+}
+
+/*
+  La pseudo-clase :link CSS representa un elemento que aún no se ha visitado.
+*/
+a:link {
+  background-color: gold;
+  color: green;
+}
+
+/*
+La pseudo-clase :visited representa un elemento que ya ha sido visitado.
+*/
+a:visited {
+  background-color: green;
+  color: yellow;
+}

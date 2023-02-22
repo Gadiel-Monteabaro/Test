@@ -1,0 +1,55 @@
+/*
+  La Propiedad Position
+
+  Hay 4 valores posibles para la propiedad Position:
+
+  Static: es el valor por default de todos los elementos HTML. Técnicamente, si un elemento tiene position: static no estaría   posicionado ya que ocupará su posición por defecto.
+*/
+/*
+  Relative: La propiedad position: relative nos permite mover el elemento en relación a su ubicación dada por default.
+  Este valor va acompañado de las propiedades left o right que indican cuánto queremos moverlo hacia los costados y top o bottom para moverlo hacia arriba o hacia abajo.
+
+  Importante: si se posiciona un elemento usando position: relative, el espacio ocupado por default, permanecerá bloqueado aunque el elemento se haya movido. Es decir, los demás elementos HTML no ocuparán ese lugar.
+ 
+  Valores contradictorios en Position: relative
+
+  No deben usarse los atributos left y right simultáneamente porque sería una orden contradictoria (o se mueve a la izquierda de donde está o hacia la derecha). Lo mismo ocurre con top y bottom: hay que elegir uno de cada par. 
+*/
+p {
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+/*
+  Fixed: fija el elemento en un punto del view port de la pantalla. Por lo tanto, si hacemos scroll, este elemento no se moverá y quedará por debajo o por encima del contenido.
+
+  Para posicionar un elemento con position: fixed usamos, al igual que en position: relative, los valores contradictorios top o bottom y right o left.
+
+  Importante: Los elementos con position: fixed salen del flow de la página. Es decir, quedan volando y, a diferencia de position:  relative, su espacio será ocupado por los otros elementos de la web.
+*/
+p {
+  position: fixed;
+  right: 400px;
+  bottom: 100px;
+}
+
+/*
+  Absolute: ubica al elemento en un punto que está en relación a su ancestro posicionado más cercano. Al igual que en fixed, el elemento queda flotando sobre el elemento que lo contiene, ocupando solo el ancho que necesita.
+
+  Si el elemento con position: absolute no está dentro de ningún otro elemento posicionado, se ubicará en relación al body, que es su único ancestro posicionado.
+*/
+p {
+  position: absolute;
+  left: 100px;
+  right: 100px;
+}
+
+/*
+  El atributo Z-index
+  Para cambiar la capa en la que se posiciona el elemento, deberás sumar el atributo z-index. Un atributo z-index positivo lo pondrá por encima del HTML mientras que uno negativo lo pondrá por debajo.
+*/
+
+/*
+  ver imagen -> 4_posicionamiento.png 
+*/

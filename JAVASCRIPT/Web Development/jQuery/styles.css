@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.big-title {
+  text-align: center;
+  font-size: 5rem;
+  color: #adb5bd;
+  font-family: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #52b69a;
+  font-size: 2rem;
+  border: 2px solid #52b69a;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 16px;
+  margin: 32px 16px;
+  border: 2px solid #00b4d8;
+  border-radius: 5px;
+  color:#00b4d8;
+}
+
+.box {
+  width: 70%;
+  border: 3px solid #6c757d;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px auto;
+}

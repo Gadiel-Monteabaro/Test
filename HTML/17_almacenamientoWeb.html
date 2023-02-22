@@ -1,0 +1,60 @@
+<!--
+    Los sitios web pueden guardar datos en el computador session de los usuarios. Antes de HTML5, se tenian que usar cookies de javascript para alcanzar esta funcionalidad.
+
+    Ventajas.
+    -> Mas Seguro.
+    -> Mas Rapido.
+    -> Guarda cantidad mas grande de datos. 
+    -> Los datos guardados no son enviados con cada peticion del servidor.
+
+    El almacenamiento session es por dominio. Todas las paginas desde el dominio pueden guardar y acceder a los mismo datos.
+-->
+
+<!--
+    Tipos de objetos de almacenamiento Web
+
+    Hay dos tipos de objetos de alamcenamiento web: 
+    ->sessionStorage()
+    ->localStorage()
+
+    Local VS Session
+    -> El almacenamiento por sesion es destruido una vez el usuario cierra el explorador.
+    -> El alamcenamiento local guarda datos sin fecha de expiracion.
+-->
+
+<!--
+    La sintaxis para el alamacenamiento web en modo local y en modo sesion es muy sencilla y similar.
+    Los datos son guardados como parejas de clave/valor.   
+-->
+
+<script>
+    //Guardando un valor.
+    localStorage.setItem("clave1", "valor");
+
+    //Obteniendo un valor.
+    alert(localStorage.getItem("clave1"));
+
+    //Removiendo un Valor.
+    localStorage.removeItem("clave1");
+
+    //Removiendo todos los valores.
+    localStorage.clear();
+</script>
+
+<!--
+    Lo mismo pasa con session, con una diferencia que en vez de localStorage, se usa sessionStorage.
+-->
+
+<script>
+    //Guardando un valor.
+    sessionStorage.setItem("clave1", "valor");
+
+    //Obteniendo un valor.
+    alert(sessionStorage.getItem("clave1"));
+
+    //Removiendo un Valor.
+    sessionStorage.removeItem("clave1");
+
+    //Removiendo todos los valores.
+    sessionStorage.clear();
+</script>

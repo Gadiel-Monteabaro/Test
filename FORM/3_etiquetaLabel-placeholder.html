@@ -1,0 +1,30 @@
+<!--
+    El atributo placeholder y el tag <label></label> sirven para indicar al usuario qué debe poner en cada campo.
+    El Atributo placeholder.
+    El atributo placeholder se agrega dentro del tag <input> y sirve como referencia visual para el usuario.
+-->
+<input type="text" name="nombre" placeholder="Nombre y Apellido">
+
+<div>
+    <!--
+        El Tag <label></label>, es la etiqueta que lleva el nombre del <input>.
+        Hay dos formas de usarlo:
+
+        Escribiendo el nombre del campo y el tag <input> dentro de <label></label>:
+    -->
+    <label>
+        Nombre: <input type="text" name="username" placeholder="nombre y apellido">
+    </label>
+
+    <!--
+        Escribiendo dentro del tag <label></label> un atributo for que, a su vez, tome el valor del id que le daremos al
+        input.
+    -->
+    <label for="nombre_usuario">Nombre:</label>
+    <input type="text" id="nombre_usuario" name="username" placeholder="nombre y apellido">
+
+
+    <!--
+        Google beneficia a los sitios escritos semánticamente ya que sus buscadores pueden catalogarlos y posicionarlos mejor.
+    -->
+</div>

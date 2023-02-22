@@ -1,0 +1,41 @@
+/*
+  ¿Cómo Importar Las Tipografías De Google Fonts?
+  Google Fonts es un directorio interactivo de uso libre que programa interfaces para fuentes —tipografías o fonts en inglés— de la web. 
+  ->https://fonts.google.com/
+
+  Para usar las hojas de estilo que contiene las tipografías de Google Fonts, debés agregar una etiqueta <link> en el head de tu HTML para que lo vincule con el stylesheet de la fuente elegida.
+*/
+/*
+  Las tipografías se dividen en 5 categorías principales:
+  Serif
+  Sans serif
+  Display
+  Handwriting
+  Monospace
+*/
+/*
+  Cómo Importar Las Google Fonts
+  Para importar las Google Fonts a tu proyecto, seguí este paso a paso:
+
+  Elegí la fuente que quieras usar y hacé click en ella para acceder a la familia tipográfica completa.
+
+  Apretá el signo "+" que aparece al lado de cada estilo y copiá el link para embeberlo en tu HTML.
+
+  Pegá el tag <link> de Google Fonts en el head del HTML.
+
+  Creá un stylesheet en CSS y vinculalo al HTML, debajo del link de Google Fonts.
+
+  En el stylesheet, aplicá la tipografía usando font-family. Recordá que podés asignársela a todo el documento o a algún elemento en  particular.
+*/
+/*
+  Tipografías Con Más De Una Palabra
+  Si el nombre de una tipografía tiene más de una palabra, escribilo entre comillas para ignorar los espacios. De lo contrario, CSS   pensará que los espacios separan los nombres de distintas fuentes. Por ejemplo:
+*/
+p {
+  font-family: "Baloo Tamma";
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1;
+  font-stretch: normal; /*No se usan*/
+  font-variant: small-caps; /*No se usan*/
+}

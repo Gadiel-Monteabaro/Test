@@ -1,0 +1,48 @@
+<!--
+    Checkbox Y Etiqueta <textarea></textarea>
+    Los checkbox son similares a los radio button, excepto porque permiten seleccionar y deseleccionar la opción.
+    Por ejemplo, el checkbox de "Acepto Bases y Condiciones".
+
+    Un tag <textarea></textarea> es un campo para ingresar texto. Es similar a un <input> type="text" solo que
+    el espacio dado al usuario es mayor.
+-->
+
+<!--
+    El checkbox tiene un tag <label></label> que indica el nombre que aparecerá antes. Además, tiene un tag <input>
+    con 3 atributos:
+
+    name: Indicará a qué variable refiere el valor del input al momento de enviar la información. Es decir, en
+    la Query String, el campo "name" tendrá el valor de la opción que haya elegido el usuario.
+
+    type: Indicará qué tipo de botón es, en este caso, checkbox.
+
+    value: Indicará cómo aparecerá en la Query String la opción elegida por el usuario. 
+-->
+<label for="checkbox">Acepto recibir información sobre el curso: </label>
+<input id="checkbox" name="mailing" type="checkbox" value="consent" checked><br>
+
+<!--
+    La etiqueta <textarea></textarea> tiene un opening y closing tag y los siguientes atributos:
+
+    rows (filas): Es un valor numérico que indica el alto de la caja de texto. Por ejemplo, "20".
+
+    cols (columnas): Es un valor numérico que indica el ancho de la caja de texto. Por ejemplo, "40".
+-->
+<label for="consultas">¿Tenés alguna otra duda?</label><br>
+<textarea id="consultas" rows="20" cols="40" placeholder="Dejanos tu consulta"></textarea>
+
+
+<form action="">
+    <div>
+        <label for="">Nombre Completo: </label>
+        <input type="text" placeholder="Nombre y Apellido">
+    </div>
+    <div>
+        <label for="">DNI: </label>
+        <input type="number" placeholder="Ingresar Dni">
+    </div>
+    <div>
+        <label for="">Contraseña: </label>
+        <input type="passwoerd" placeholder="Contraseña">
+    </div>
+</form>

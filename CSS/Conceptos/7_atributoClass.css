@@ -1,0 +1,15 @@
+/*
+  El Atributo Class;
+
+  El atributo class sirve para dar estilo a varios elementos HTML al mismo tiempo.
+
+  Es decir, se agrega el atributo class dentro del tag que se quiere modificar.
+
+  En CSS, deberás seleccionarlo usando el punto (.) pegado al nombre que le diste a esa clase. Luego, indicarás entre llaves {} cuáles son las reglas que le aplicarás. 
+
+  `<p class="mascota"> </p>`
+*/
+.mascota {
+  font-size: 150%;
+  color: white;
+}

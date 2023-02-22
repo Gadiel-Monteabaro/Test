@@ -1,0 +1,93 @@
+/*
+  Repaso
+  Selector de elemento: Se seleccionan todos los elementos de un tipo en HTML para darle estilo usando CSS. Por ejemplo: h1 {...}, p {...}, div {...}.
+
+  Selector de clase: Se le da una clase a un elemento HTML y, en CSS, se lo selecciona con un punto seguido del nombre dado previamente. Por ejemplo: .ejemplo {...}.
+
+  Selector de id: Se le da un ID a un elemento HTML y, en CSS, se lo selecciona con un numeral seguido del nombre dado previamente. Por ejemplo: #otroEjemplo {...}.
+*/
+
+/*
+  Selector Universal (*)
+Selecciona todos los elementos del archivo HTML.
+*/
+* {
+  /*En este ejemplo, se le dará un borde rojo a todos los elementos de la página.*/
+  border: 2px solid red;
+}
+
+/*
+  Selector De Descendiente (elemento, espacio, otro elemento)
+  Selecciona todos los elementos del segundo tipo que están contenidos dentro del primero.
+*/
+li a {
+  /*En este ejemplo, se le dará un color de texto lima a todos los <a> que están dentro de un ítem de una lista (<li>).*/
+  color: lime;
+}
+
+li .ejemploClase {
+  /*En este caso, se le dará un color de texto azul a todos todos los elementos con class="ejemploClase" que esté contenido dentro de un <li>.*/
+  color: blue;
+}
+
+#ejemploid * {
+  /*En este caso, se le dará un color de texto violeta a todos los elementos dentro del elemento con id="ejemploid".*/
+  color: purple;
+}
+
+/*
+  Selector De Hijo (>)
+  El selector de hijo (o child selector ) solo aplica para los elementos que están inmediatamente adentro de otros. Es decir, para sus hijos directos.
+
+  Si en HTML tenemos un span adentro de un párrafo que, a su vez, está contenido por un div...:
+  <div> 
+    <p> 
+      <span> 
+      </span> 
+    </p> 
+  </div>
+*/
+p > span {
+  /*el span quedará seleccionado y se pintará el texto de amarillo ya que es un hijo inmediato del <p>.*/
+  color: yellow;
+}
+/*
+  Si quisiéramos seleccionar el span que está contenido en el div, cuyo vínculo no es directo porque está mediado por p, deberíamos usar el selector descendiente en vez del hijo. De esta manera, no importará cuán adentro esté en el código para que se aplique la regla y el span tenga un color de fondo amarillo.
+*/
+
+/*
+  Agrupación De Selectores (elemento1, elemento2, etc.)
+  Para seleccionar varios elementos de un mismo HTML, se pueden agrupar separándolos con comas (,). Así, se le aplicará una misma regla a todos ellos.
+*/
+h1,
+p,
+div {
+  /*aplicará un tamaño de letra de 30px a todos los elementos h1, p y div del documento HTML.*/
+  font-size: 30px;
+}
+
+.claseEjemplo,
+#idEjemplo,
+h1 {
+  /*seleccionará los elementos con clase claseEjemplo, el elemento con ID idEjemplo y los h1 del documento HTML y le dará un tamaño tipográfico del 200%.*/
+  font-size: 200%;
+}
+
+/*
+  elemento.clase
+  Si usamos como selector un tipo de elemento con una clase pegada, se aplicará la regla CSS solo a los elementos de ese tipo que tengan esa clase.
+  si hubiera un <div>, un <h1> y un <p> con class="importante" y en CSS escribiéramos esta regla...:
+*/
+p .importante {
+  /*le aplicará un color de fondo amarillo únicamente a los elementos <p> con class="importante"*/
+  background-color: yellow;
+}
+
+/*
+  selector de atributos (attribute), que selecciona un elemento basado en el valor del atributo dado. 
+
+  selecciona los elementos input con un atributo name con el valor password.
+*/
+input[name="password"] {
+  background-color: red;
+}
