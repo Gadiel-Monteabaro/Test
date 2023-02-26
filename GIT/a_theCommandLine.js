@@ -11,9 +11,10 @@
 
 /* acceso a los directorios. 
     ls -> Enumera todos lo elementos dentro de un directorio en particular.
+    ls -a -> Muestra todos los archivos incluyendo los archivos ocultos.
     cd -> Directorio de cambio.
     cd .. -> Retrocedemos de directorio.
-    cd "ruta" -> accdemos al directorio de una ruta establecida.    
+    cd "ruta" -> accdemos al directorio de una ruta establecida. 
 */
 
 /* creacion de directorios.
