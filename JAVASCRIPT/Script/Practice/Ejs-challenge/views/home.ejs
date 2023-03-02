@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+
+    <% newPost.forEach(function(post){ %>
+        <h1>
+            <%= post.title %>
+        </h1>
+        <p>
+            <%= post.content.substring(0,100) %> ... <a href="/posts/<%= post.title %>" class="linkHome">Ver más</a>
+        </p>
+        <% }) %>
+
+            <a href="compose" type="button" class="btn btn-success boton">Publish Article</a>
+
+            <%- include('partials/footer'); -%>
