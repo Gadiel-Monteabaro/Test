@@ -35,10 +35,12 @@
   left: 20%;
   background-color: hsla(168, 76%, 42%, 0.7);
   border-style: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .boton:hover {
   background-color: #1abc8e;
+  transform: scale(1.1);
 }
 
 .footer-padding {
