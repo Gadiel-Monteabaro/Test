@@ -31,8 +31,14 @@
 
 .boton {
   position: absolute;
-  top:15%;
-  right: 15%;
+  top: 12%;
+  left: 20%;
+  background-color: hsla(168, 76%, 42%, 0.7);
+  border-style: none;
+}
+
+.boton:hover {
+  background-color: #1abc8e;
 }
 
 .footer-padding {
