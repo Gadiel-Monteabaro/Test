@@ -14,7 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // base de datos "todolistDB", true.
-mongoose.connect(`mongodb://${host}:27017/todolistDB`, { useNewUrlParser: true });
+// mongoose.connect(`mongodb://${host}:27017/todolistDB`, { useNewUrlParser: true }); db -> local
+mongoose.connect(`mongodb+srv://dbadmin:Test123@cluster0.jtiicuq.mongodb.net/todolistDB`, { useNewUrlParser: true }); // db -> atlas
 
 // esquema item generado.
 const itemsSchema = new mongoose.Schema({
@@ -119,8 +120,6 @@ app.post("/", (req, res) => {
                 res.redirect(`/list/${listName}`);
             });
     }
-
-
 });
 
 app.post("/delete", (req, res) => {
